@@ -1,0 +1,96 @@
+ID                       0
+Personal Loan            0
+Age                      0
+Experience               0
+Income                   0
+ZIP Code                 0
+Family                   0
+CCAvg                    0
+Education                0
+Mortgage                 0
+Securities Account       0
+CD Account               0
+Online                   0
+CreditCard               0
+Unnamed: 14           5000
+Unnamed: 15           5000
+Unnamed: 16           5000
+Unnamed: 17           5000
+dtype: int64
+(0, 18)
+   ID  Personal Loan  Age  Experience  Income  ZIP Code  Family  CCAvg  Education  Mortgage  Securities Account  CD Account  Online  CreditCard
+0   1              0   25           1      49     91107       4    1.6          1         0                   1           0       0           0
+1   2              0   45          19      34     90089       3    1.5          1         0                   1           0       0           0
+2   3              0   39          15      11     94720       1    1.0          1         0                   0           0       0           0
+3   4              0   35           9     100     94112       1    2.7          2         0                   0           0       0           0
+4   5              0   35           8      45     91330       4    1.0          2         0                   0           0       0           1
+['ID', 'Personal Loan', 'Age', 'Experience', 'Income', 'ZIP Code', 'Family', 'CCAvg', 'Education', 'Mortgage', 'Securities Account', 'CD Account', 'Online', 'CreditCard']
+Variable: Income
+Average: 73.7742
+Mean: 64.0
+Minimum: 8
+Maximum: 224
+
+Variable: CCAvg
+Average: 1.9379380000000002
+Mean: 1.5
+Minimum: 0.0
+Maximum: 10.0
+
+Variable: Mortgage
+Average: 56.4988
+Mean: 0.0
+Minimum: 0
+Maximum: 635
+
+C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\preprocessing\_discretization.py:291: UserWarning: Bins whose width are too small (i.e., <= 1e-8) in feature 0 are removed. Consider decreasing the number of bins.
+  warnings.warn(
+   ID  Personal Loan  Age  Experience  Income  ZIP Code  Family  CCAvg  Education  Mortgage  Securities Account  CD Account  Online  CreditCard  Income_bins  CCAvg_bins  Mortgage_bins
+0   1              0   25           1      49     91107       4    1.6          1         0                   1           0       0           0          1.0         1.0            0.0
+1   2              0   45          19      34     90089       3    1.5          1         0                   1           0       0           0          1.0         1.0            0.0
+2   3              0   39          15      11     94720       1    1.0          1         0                   0           0       0           0          0.0         1.0            0.0
+3   4              0   35           9     100     94112       1    2.7          2         0                   0           0       0           0          3.0         2.0            0.0
+4   5              0   35           8      45     91330       4    1.0          2         0                   0           0       0           1          1.0         1.0            0.0
+Confusion Matrix:
+ [[811  84]
+ [ 27  78]]
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.97      0.91      0.94       895
+           1       0.48      0.74      0.58       105
+
+    accuracy                           0.89      1000
+   macro avg       0.72      0.82      0.76      1000
+weighted avg       0.92      0.89      0.90      1000
+
+
+Accuracy Score: 0.889
+Partition of y Data:
+Train Set (y_train): (4000,)
+Train Set (y_test): (1000,)
+
+History of Train/Test Split:
+x_train shape: (4000, 4)
+x_test shape: (1000, 4)
+
+Fit Details:
+Max Depth of Decision Tree: 20
+Number of Features: 4
+Confusion Matrix:
+ [[888   7]
+ [ 25  80]]
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       895
+           1       0.92      0.76      0.83       105
+
+    accuracy                           0.97      1000
+   macro avg       0.95      0.88      0.91      1000
+weighted avg       0.97      0.97      0.97      1000
+
+
+Accuracy Score: 0.968
