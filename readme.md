@@ -1,9 +1,9 @@
-# ABOUT  
+## About this Project: 
 
 
-## Test Model to Show Personal Loan & Credit Pre-Approval Predictive Model Within Banking  
+### Test Model to Show Personal Loan & Credit Pre-Approval Predictive Model Within Banking  
 
-## Variables Utilized  
+## Key Variables Utilized within Analysis 
 * Income - Current Annual Income  
 * CCAvg - Monthly Credit Utilization on Credit Card  
 * Mortgage - Existing Mortgage Balance else 0  
@@ -47,3 +47,4 @@ weighted avg       0.97      0.97      0.97      1000
 
 Accuracy Score: 0.968
 ```  
+## Naive Bayes Accuracy = 88.90%, Decision Tree = 96.80%
